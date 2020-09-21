@@ -39,7 +39,7 @@
     - name: Provision an instance
       ec2:
         key_name: "{{ keypair_name }}"
-        group: http-server
+        group: zuul-security
         instance_type: "{{ instance_type }}"
         image: "{{ image_name }}"
         wait: true
