@@ -18,7 +18,7 @@
     - name: Setup security group
       ec2_group:
         name: zuul-security
-        description: Security rules for HTTP Server
+        description: Security rules for Zuul Server
         region: "{{ region }}"
         rules_egress:
            - proto: tcp
